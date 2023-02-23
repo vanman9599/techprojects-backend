@@ -1,0 +1,24 @@
+{
+  "name": "techprojects-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanman9599/techprojects-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vanman9599/techprojects-backend/issues"
+  },
+  "homepage": "https://github.com/vanman9599/techprojects-backend#readme",
+  "dependencies": {
+    "sqlite3": "^5.1.4"
+  }
+}
