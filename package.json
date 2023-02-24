@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/vanman9599/techprojects-backend#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "knex": "^2.4.2",
     "sqlite3": "^5.1.4"
   }
 }

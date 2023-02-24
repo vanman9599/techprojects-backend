@@ -17,7 +17,7 @@ module.exports = {
       },
     },
     migrations: {
-      directory: '/database/migrations'
+      directory: './database/migrations'
     }, 
     seeds: {
       directory: './database/seeds'
@@ -27,11 +27,11 @@ module.exports = {
   staging: {
     client: 'postgresql',
     connection: {
-      host: '34.122.62.232',
-      port: 5432, 
-      database: 'techprojects',
-      user:     'vanman9599',
-      password: 'Canopy-9m-ok'
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT, 
+      database: process.env.DB_DATABASE,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PASSWORD
     },
     pool: {
       min: 2,
@@ -45,12 +45,12 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      host: '34.122.62.232',
-      port: 5432, 
-      database: 'techprojects',
-      user:     'vanman9599',
-      password: 'Canopy-9m-ok'
-    }},
+      host: process.env.DB_HOST,
+      port: process.env.DB_PORT, 
+      database: process.env.DB_DATABASE,
+      user:     process.env.DB_USER,
+      password: process.env.DB_PASSWORD
+    },
     pool: {
       min: 2,
       max: 10
